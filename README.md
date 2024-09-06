@@ -12,6 +12,6 @@ short_description: Ask any questions to the Audit reports
 license: apache-2.0
 ---
 
-Check out the configuration reference at: https://huggingface.co/docs/hub/spaces-config-reference
+App is accessible and deployed on HugginFace: https://huggingface.co/spaces/GIZ/audit_assistant
 
 For the lead design and development choices, you may contact: prashant.singh@giz.de
