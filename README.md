@@ -13,3 +13,5 @@ license: apache-2.0
 ---
 
 Check out the configuration reference at: https://huggingface.co/docs/hub/spaces-config-reference
+
+For the lead design and development choices, you may contact: prashant.singh@giz.de
