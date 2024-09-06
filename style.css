@@ -1,0 +1,362 @@
+
+/* :root {
+    --user-image: url('https://ih1.redbubble.net/image.4776899543.6215/st,small,507x507-pad,600x600,f8f8f8.jpg');
+  } */
+
+.warning-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #856404;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+
+.tip-box {
+    background-color: #f0f9ff;
+    border: 1px solid #80d4fa;
+    border-radius: 4px;
+    margin-top:20px;
+    padding: 15px 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: auto;
+    color:black !important;
+}
+
+body.dark .warning-box * {
+    color:black !important;
+}
+
+
+body.dark .tip-box * {
+    color:black !important;
+}
+
+
+.tip-box-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.light-bulb {
+    display: inline;
+    margin-right: 5px;
+}
+
+.gr-box {border-color: #d6c37c}
+
+#hidden-message{
+    display:none;
+}
+
+.message{
+    font-size:14px !important;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 14px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top:0px !important;
+    color:#dc2626!important;;
+}
+
+.card-content p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.card-footer {
+    background-color: #f4f4f4;
+    font-size: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer span {
+    flex-grow: 1;
+    text-align: left;
+    color: #999 !important;
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    text-decoration: none!important;
+    font-size: 14px;
+}
+
+
+
+.message.user{
+    /* background-color:#7494b0 !important; */
+    border:none;
+    /* color:white!important; */
+}
+
+.message.bot{
+    /* background-color:#f2f2f7 !important; */
+    border:none;
+}
+
+/* .gallery-item > div:hover{
+    background-color:#7494b0 !important;
+    color:white!important;
+}
+.gallery-item:hover{
+    border:#7494b0 !important;
+}
+.gallery-item > div{
+    background-color:white !important;
+    color:#577b9b!important;
+}
+.label{
+    color:#577b9b!important;
+} */
+
+/* .paginate{
+    color:#577b9b!important;
+} */
+
+
+
+/* span[data-testid="block-info"]{
+    background:none !important;
+    color:#577b9b;
+  } */
+
+/* Pseudo-element for the circularly cropped picture */
+/* .message.bot::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background-image: var(--user-image);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 10;
+  }
+   */
+
+label.selected{
+  background:none !important;
+}
+
+#submit-button{
+    padding:0px !important;
+}
+
+
+@media screen and (min-width: 1024px) {
+    div#tab-examples{
+        height:calc(100vh - 190px) !important;
+        overflow-y: auto;
+    }
+
+    div#sources-textbox{
+        height:calc(100vh - 190px) !important;
+        overflow-y: auto !important;
+    }
+
+    div#tab-config{
+        height:calc(100vh - 190px) !important;
+        overflow-y: auto !important;
+    }
+
+    div#chatbot-row{
+        height:calc(100vh - 90px) !important;
+    }
+
+    div#chatbot{
+        height:calc(100vh - 170px) !important;
+    }
+
+    .max-height{
+        height:calc(100vh - 90px) !important;
+        overflow-y: auto;
+    }
+
+    /* .tabitem:nth-child(n+3) {
+        padding-top:30px;
+        padding-left:40px;
+        padding-right:40px;
+    } */
+}
+
+footer {
+    visibility: hidden;
+    display:none !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Your mobile-specific styles go here */
+
+    div#chatbot{
+        height:500px !important;
+    }
+
+    #submit-button{
+        padding:0px !important;
+        min-width: 80px;
+    }
+
+    /* This will hide all list items */
+    div.tab-nav button {
+        display: none !important;
+    }
+
+    /* This will show only the first list item */
+    div.tab-nav button:first-child {
+        display: block !important;
+    }
+    
+    /* This will show only the first list item */
+    div.tab-nav button:nth-child(2) {
+        display: block !important;
+    }
+    
+    #right-panel button{
+        display: block !important;
+    }
+
+    /* ... add other mobile-specific styles ... */
+}
+
+
+body.dark .card{
+    background-color: #374151;
+}
+
+body.dark .card-content h2{
+    color:#f4dbd3 !important;
+}
+
+body.dark .card-footer {
+    background-color: #404652;
+}
+
+body.dark .card-footer span {
+    color:white !important;
+}
+
+
+.doc-ref{
+    color:#dc2626!important;
+    margin-right:1px;
+}
+
+.tabitem{
+    border:none !important;
+}    
+
+.other-tabs > div{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+}
+
+.gallery-item > div{
+    white-space: normal !important; /* Allow the text to wrap */
+    word-break: break-word !important; /* Break words to prevent overflow */
+    overflow-wrap: break-word !important; /* Break long words if necessary */
+  }
+
+span.chatbot > p > img{
+    margin-top:40px !important;
+    max-height: none !important;
+    max-width: 80% !important;
+    border-radius:0px !important;
+}
+
+
+.chatbot-caption{
+    font-size:11px;
+    font-style:italic;
+    color:#508094;
+}
+
+.ai-generated{
+    font-size:11px!important;
+    font-style:italic;
+    color:#73b8d4 !important;
+}
+
+.card-image > .card-content{
+    background-color:#f1f7fa !important;
+}
+
+
+
+.tab-nav > button.selected{
+    color:#4b8ec3;
+    font-weight:bold;
+    border:none;
+}
+
+.tab-nav{
+    border:none !important;
+}
+
+#input-textbox > label > textarea{
+    border-radius:40px;
+    padding-left:30px;
+    resize:none;
+}
+
+#input-message > div{
+    border:none;
+}
+
+#dropdown-samples{
+  /*! border:none !important; */
+  /*! border-width:0px !important; */
+  background:none !important;
+  
+}
+
+#dropdown-samples > .container > .wrap{
+  background-color:white;
+}
+
+
+#tab-examples > div > .form{
+  border:none;
+  background:none !important;
+}
+
+.a-doc-ref{
+	text-decoration: none !important;
+}
